@@ -1,7 +1,6 @@
 import React from "react";
 import * as HeaderStyles from "../styles/Header.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
-import Button from "./Button";
 import InfoBlock from "./InfoBlock";
 import { HEADER_GRID_LAYOUT } from "../utils/constants";
 
@@ -30,7 +29,6 @@ function Header() {
             track you day to day activity better. Without the hassle of manual
             labour
           </p>
-          {/* <Button type='primary'>Know More</Button> */}
         </div>
         <div className={HeaderStyles.infogrid}>
           {HEADER_GRID_LAYOUT.map((layout, index) => (

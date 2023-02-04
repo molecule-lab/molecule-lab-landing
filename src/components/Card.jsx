@@ -1,6 +1,6 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import * as TimelineStyles from "../styles/card.module.scss";
+import * as TimelineStyles from "../styles/Card.module.scss";
 function Timeline() {
   return (
     <div className={TimelineStyles.container}>
