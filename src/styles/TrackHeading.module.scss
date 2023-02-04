@@ -1,0 +1,19 @@
+@import "./base/variables.scss";
+.headingContainer {
+  padding: map-get($spacing, "2");
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  & > span {
+    font-size: 20px;
+    display: inline-block;
+  }
+}
+
+.gradientText {
+  font-size: 80px !important;
+}

@@ -1,0 +1,27 @@
+@import "./base/variables.scss";
+.container {
+  width: 80%;
+  margin: -40px auto 40px auto;
+  background-color: $white;
+  z-index: 1000;
+  position: relative;
+  border-radius: map-get($border-radius, "1");
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+  padding: map-get($spacing, "10");
+}
+
+.aboutUs {
+  width: 80%;
+  margin: auto;
+  color: $brand-dark;
+  & > h3 {
+    font-size: 28px;
+    color: $brand-red;
+  }
+  & > p {
+    line-height: 1.4;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: map-get($spacing, "2");
+  }
+}

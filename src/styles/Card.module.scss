@@ -1,0 +1,85 @@
+@import "./base/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(90deg, #2b9348 0%, #5fc076 100%);
+  padding: map-get($spacing, "4");
+
+  & > h3 {
+    color: $white;
+    word-break: keep-all;
+    font-size: 24px;
+  }
+}
+
+.progressbarContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  margin-top: map-get($spacing, "5");
+  & > div:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  & > div:nth-of-type(1),
+  & > div:nth-of-type(3) {
+    font-size: 14px;
+    color: $white;
+  }
+  & > div:nth-of-type(3) {
+    align-self: flex-end;
+  }
+}
+
+.progressbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  column-gap: 5px;
+
+  & > div {
+    width: 20%;
+    height: 5px;
+    background-color: $white;
+    border-radius: 2px;
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      background-color: rgba($color: $white, $alpha: 0.5);
+    }
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardFooterTeam {
+  & > img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    z-index: -100;
+    &:not(:first-child) {
+      margin-left: -10px;
+    }
+  }
+}
+
+.cardFooterDate {
+  display: flex;
+  align-items: center;
+  color: $white;
+  column-gap: 5px;
+  font-size: 12px;
+
+  & > p {
+    margin-top: 2px;
+  }
+}

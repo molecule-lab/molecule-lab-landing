@@ -1,0 +1,19 @@
+@import "./base/variables.scss";
+.container {
+  padding: map-get($spacing, "2") map-get($spacing, "5");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.iconStyle {
+  width: 60px;
+  height: 60px;
+}
+.text {
+  font-size: 24px;
+  background: linear-gradient(90deg, #2b9348 0%, #5fc076 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

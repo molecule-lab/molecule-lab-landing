@@ -1,0 +1,13 @@
+@import "./base/variables.scss";
+.container {
+  background-color: $white;
+  border-radius: map-get($border-radius, "1");
+  display: flex;
+  align-self: flex-end;
+  align-self: stretch;
+  grid-row-start: var(--rowStart);
+  grid-row-end: var(--rowEnd);
+  grid-column-start: var(--columnStart);
+  grid-column-end: var(--columnEnd);
+  overflow: hidden;
+}

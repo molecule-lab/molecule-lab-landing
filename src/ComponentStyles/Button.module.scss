@@ -1,0 +1,32 @@
+@import "../styles/base/variables.scss";
+
+@mixin common-button-styles($bg-color) {
+  background-color: $bg-color;
+  padding: map-get($spacing, "4") map-get($spacing, "15");
+  border-radius: map-get($border-radius, "1");
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  margin-top: map-get($spacing, "5");
+  color: $white;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(0.95) translateY(-2px);
+  }
+}
+
+.primary {
+  @include common-button-styles($brand-red);
+}
+
+.secondary {
+  @include common-button-styles($brand-blue);
+}
+
+.dark {
+  @include common-button-styles($brand-dark);
+}

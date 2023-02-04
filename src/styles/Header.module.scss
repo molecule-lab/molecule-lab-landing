@@ -1,0 +1,54 @@
+@import "./base/variables.scss";
+
+.container {
+  width: 100%;
+  padding-top: 20px;
+}
+.wrapper {
+  width: 90%;
+  margin: auto;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6));
+  border-radius: 10px;
+  padding: 80px 50px 80px 50px;
+  background-color: $brand-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headline {
+  max-width: 450px;
+  font-weight: 300;
+  color: $white;
+  font-size: 42px;
+}
+
+.headline {
+  margin-top: map-get($spacing, "5");
+  max-width: 500px;
+  font-weight: 300;
+  color: $white;
+  font-size: 42px;
+
+  & > span {
+    color: $brand-red;
+  }
+}
+
+.tagline {
+  max-width: 400px;
+  color: $white;
+  margin-top: 10px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.infogrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 100px));
+  grid-template-rows: repeat(5, minmax(100px, 100px));
+  gap: map-get($spacing, "2");
+  &:nth-child(1) {
+    margin-top: -10px;
+  }
+}
